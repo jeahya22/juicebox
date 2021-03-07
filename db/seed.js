@@ -12,7 +12,8 @@ const {
   createPostTag,
   addTagsToPost,
   getPostById,
-  getPostsByTagName
+  getPostsByTagName,
+  getAllTags
 } = require('./index');
 
 //! /////////////////////////////////////////////
@@ -94,6 +95,12 @@ async function createInitialUsers() {
       password: 'soglam',
       name: 'Joshua',
       location: 'Upper East Side'
+    });
+    await createUser({ 
+      username: 'syzygys',
+      password: 'stars',
+      name: 'josiah',
+      location: 'quebec'
     });
 
     console.log("Finished creating users!");
